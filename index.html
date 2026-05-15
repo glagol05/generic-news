@@ -36,7 +36,19 @@
 
         </aside>
 
-        <main class="main-container">
+        <section class="create-article">
+            <h2>Create Article</h2>
+
+            <input type="text" id="title" placeholder="Title">
+
+            <textarea id="content" placeholder="Article content"></textarea>
+
+            <input type="file" id="image" accept="image/*">
+
+            <button id="create-btn">Create Article</button>
+        </section>
+
+        <main class="main-container" id="articles-container">
 
             <div class="main-article">
                 <img class="headline-photo" src="resources/storm.jpg">
@@ -64,5 +76,8 @@
         </div>
     </footer>
 
+    <div id="toast-container"></div>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
